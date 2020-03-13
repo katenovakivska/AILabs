@@ -1,0 +1,7 @@
+C:\Users\Katya\source\repos\AI1\AI1\bin\Debug\AI1.exe.config
+C:\Users\Katya\source\repos\AI1\AI1\bin\Debug\AI1.exe
+C:\Users\Katya\source\repos\AI1\AI1\bin\Debug\AI1.pdb
+C:\Users\Katya\source\repos\AI1\AI1\obj\Debug\AI1.csprojResolveAssemblyReference.cache
+C:\Users\Katya\source\repos\AI1\AI1\obj\Debug\AI1.csproj.CoreCompileInputs.cache
+C:\Users\Katya\source\repos\AI1\AI1\obj\Debug\AI1.exe
+C:\Users\Katya\source\repos\AI1\AI1\obj\Debug\AI1.pdb
