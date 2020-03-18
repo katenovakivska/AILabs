@@ -1,0 +1,9 @@
+c:\users\katya\source\repos\AI2\AI2\bin\Debug\AI2.exe.config
+c:\users\katya\source\repos\AI2\AI2\bin\Debug\AI2.exe
+c:\users\katya\source\repos\AI2\AI2\bin\Debug\AI2.pdb
+c:\users\katya\source\repos\AI2\AI2\obj\Debug\AI2.csprojResolveAssemblyReference.cache
+c:\users\katya\source\repos\AI2\AI2\obj\Debug\AI2.csproj.CoreCompileInputs.cache
+c:\users\katya\source\repos\AI2\AI2\obj\Debug\AI2.exe
+c:\users\katya\source\repos\AI2\AI2\obj\Debug\AI2.pdb
+C:\Users\Katya\source\repos\AI2\AI2\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Katya\source\repos\AI2\AI2\bin\Debug\System.Numerics.Vectors.xml
