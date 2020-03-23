@@ -7,3 +7,12 @@ c:\users\katya\source\repos\AI2\AI2\obj\Debug\AI2.exe
 c:\users\katya\source\repos\AI2\AI2\obj\Debug\AI2.pdb
 C:\Users\Katya\source\repos\AI2\AI2\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\Katya\source\repos\AI2\AI2\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Katya\Desktop\копеи\AI\AI2\AI2\bin\Debug\AI2.exe.config
+C:\Users\Katya\Desktop\копеи\AI\AI2\AI2\bin\Debug\AI2.exe
+C:\Users\Katya\Desktop\копеи\AI\AI2\AI2\bin\Debug\AI2.pdb
+C:\Users\Katya\Desktop\копеи\AI\AI2\AI2\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Katya\Desktop\копеи\AI\AI2\AI2\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Katya\Desktop\копеи\AI\AI2\AI2\obj\Debug\AI2.csprojResolveAssemblyReference.cache
+C:\Users\Katya\Desktop\копеи\AI\AI2\AI2\obj\Debug\AI2.csproj.CoreCompileInputs.cache
+C:\Users\Katya\Desktop\копеи\AI\AI2\AI2\obj\Debug\AI2.exe
+C:\Users\Katya\Desktop\копеи\AI\AI2\AI2\obj\Debug\AI2.pdb

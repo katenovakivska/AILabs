@@ -14,8 +14,11 @@ namespace AI2
         //к-ть води у відрах
         public int pail5L;
         public int pail9L;
+
         //вихідні стани с поточного та попередній стан
         public State left, right, prev;
+        public int fCost, gCost;
+
         //дефолтний конструктор стану
         public State()
         {
@@ -260,6 +263,79 @@ namespace AI2
             }
         }
 
+        public List<State> closeList = new List<State>();
+        public List<State> openList = new List<State>();
+        bool goalSucc = false;
+
+
+        //Рекурсивний метод пошуку за першим найкращим співпадінням
+        public State RBFS(State Root, State Goal, double limit)
+        {
+            if (Root == Goal)
+            {
+                goalSucc = true;
+                return Root;
+            }
+            else
+            {
+                State[] successors = ExpandNode(Root);
+                successors.OrderBy(x => x.fCost);
+                if (successors[0].fCost > limit)
+                    return successors[0];
+                else
+                {
+                    closeList.Add(Root);
+                    foreach (var s in successors)
+                    {
+                        if (s != closeList.Last())
+                            openList.Add(s);
+                    }
+                    openList.Sort();
+                    State bestNode = openList[0];
+                    openList.RemoveAt(0);
+                    State alternativeNode = openList[0];
+                    openList.RemoveAt(0);
+                    while (goalSucc == false)
+                    {
+                        bestNode = RBFS(bestNode, Goal, Math.Min(limit, alternativeNode.fCost));
+                        openList.Add(bestNode);
+                        openList.OrderBy(x => x.fCost);
+                        bestNode = openList[0];
+                        openList.RemoveAt(0);
+                        alternativeNode = openList[0];
+                        openList.RemoveAt(0);
+                    }
+                    return bestNode;
+                }
+            }
+        }
+        //метод пошуку дочірніх станів
+        public State[] ExpandNode(State Root)
+        {
+            State[] succ = new State[2];
+            foreach (var s in succ)
+            {
+                s.prev = root;
+                s.gCost = 0;
+                State el = s;
+                while (el.prev != Root.prev)
+                {
+                    s.gCost += el.gCost;
+                    el = el.prev;
+                }
+                s.fCost = 0;
+                el = s;
+                while (!(el.pail5L == 0 && el.pail9L == 3) || !(el.pail5L == 3 && el.pail9L == 0))
+                {
+                    s.gCost += el.gCost;
+                    if (el.left != null && (el.left.right != null || el.left.left != null))
+                        el = el.left;
+                    else
+                        el = el.right;
+                }
+            }
+            return succ;
+        }
         //метод відображення знайденого шляху
         public virtual void ShowFindPath()
         {
@@ -296,7 +372,7 @@ namespace AI2
             }
         }
 
-        //рекурсивний пошук розв'язку у рівні дерево
+        //рекурсивний пошук розв'язку у рівні дерева
         public virtual void SearchPath(State root, int limit, int last, int min)
         {
             if (root == null)

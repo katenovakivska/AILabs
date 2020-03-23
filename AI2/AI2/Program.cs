@@ -18,6 +18,7 @@ namespace AI2
             State Result = new State();
             bool first = true;
             tree.Insert(tree.childs[0], tree.childs, first);
+            State s = tree.RBFS(tree.root,tree.root, 1);
             tree.ShowFindPath();
             Console.ReadKey();
         }
