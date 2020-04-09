@@ -1,0 +1,7 @@
+C:\Users\Katya\source\repos\AI3\AI3\bin\Debug\AI3.exe.config
+C:\Users\Katya\source\repos\AI3\AI3\bin\Debug\AI3.exe
+C:\Users\Katya\source\repos\AI3\AI3\bin\Debug\AI3.pdb
+C:\Users\Katya\source\repos\AI3\AI3\obj\Debug\AI3.csprojAssemblyReference.cache
+C:\Users\Katya\source\repos\AI3\AI3\obj\Debug\AI3.csproj.CoreCompileInputs.cache
+C:\Users\Katya\source\repos\AI3\AI3\obj\Debug\AI3.exe
+C:\Users\Katya\source\repos\AI3\AI3\obj\Debug\AI3.pdb
